@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 1rem;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(11, 10, 10);
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+}
+
+header nav ul li:hover {
+    cursor: pointer;
+    background-color: rgb(209, 221, 209);
+}
+.fa-fa-phone{
+    color: black;
+}
+.contacts {
+    max-width: 800px;
+    margin: auto;
+    margin-top: auto;
+    display: flex;
+    margin-top: 5rem;
+    gap: 1rem;
+    line-height: 2rem;
+}
+.no{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.safety{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+footer{
+    width: 100vw;
+    margin: auto;
+    background-color: #05203C;
+}
+.call>p{
+    margin: 2rem;
+    padding: 2rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+.footer-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: rgb(255, 255, 255);
+    width: 80vw;
+    margin: auto;
+    font-family: sans-serif;
+
+}
+li{
+    list-style: none;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+}
+ .footer-container a{
+    text-decoration: none;
+}
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer>.buttons-nav{
+    margin-top: 2rem;
+}
+@media only screen and (max-width:500px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        max-width: 413px;
+        margin: auto;
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+    }
+    .no{
+        margin: 2rem;
+    }
+    .safety{
+        margin: 2rem;
+        padding: 3rem;
+    }
+}
